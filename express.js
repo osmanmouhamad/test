@@ -2,10 +2,10 @@
 const express = require('express');
  const XLSX = require('xlsx');
  const cors = require('cors'); 
- app.use(cors());
+ 
 
 const app = express();
-
+app.use(cors());
 app.get('/osman', (req, res) => {
    
 const filePath = './data.xlsx';
